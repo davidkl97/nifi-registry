@@ -1,6 +1,6 @@
 flows:
-  1b1baa2a-a278-44df-a14e-1c9f9c7ba95f: {ver: 2, file: beat-flow.snapshot, comments: Adding
-      remote local group for metricbeat transformations, author: anonymous, created: 1637928125173,
-    flowName: beat-flow, flowDesc: ''}
+  1b1baa2a-a278-44df-a14e-1c9f9c7ba95f: {ver: 3, file: beat-flow.snapshot, comments: fix
+      publish kafka processor labels, author: anonymous, created: 1638545160269, flowName: beat-flow,
+    flowDesc: ''}
 layoutVer: 1
 bucketId: bb8352d0-c732-4a47-831b-cae759801bcd

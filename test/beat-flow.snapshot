@@ -15,13 +15,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
             "id" : "1b841659-eac1-376c-b852-ff13e82b61bc",
-            "name" : "Publish filebeat to kafka",
+            "name" : "Publish packetbeat to kafka",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "9dae70c5-7fea-36fc-8f92-2d61a9aba34a",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -32,7 +32,7 @@
           "selectedRelationships" : [ "packetbeat" ],
           "source" : {
             "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
             "id" : "a58bf35c-7475-3d2d-8754-1190d43397c6",
             "name" : "Route based on beat type",
             "type" : "PROCESSOR"
@@ -45,13 +45,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
             "id" : "a0ef3624-65cc-3a07-afa1-4b8b38740cfb",
             "name" : "Publish metricbeat to kafka",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "07367a5d-db50-341e-be51-0b5ee9e2f5c8",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -70,53 +70,17 @@
         }, {
           "backPressureDataSizeThreshold" : "1 GB",
           "backPressureObjectThreshold" : 10000,
-          "bends" : [ {
-            "x" : 1276.44580078125,
-            "y" : 543.0385131835938
-          }, {
-            "x" : 1276.44580078125,
-            "y" : 593.0385131835938
-          } ],
-          "componentType" : "CONNECTION",
-          "destination" : {
-            "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
-            "id" : "a58bf35c-7475-3d2d-8754-1190d43397c6",
-            "name" : "Route based on beat type",
-            "type" : "PROCESSOR"
-          },
-          "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
-          "identifier" : "3d863903-d05c-3abc-aee5-daa0854f96c1",
-          "labelIndex" : 1,
-          "loadBalanceCompression" : "DO_NOT_COMPRESS",
-          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-          "name" : "",
-          "partitioningAttribute" : "",
-          "prioritizers" : [ ],
-          "selectedRelationships" : [ "unmatched" ],
-          "source" : {
-            "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
-            "id" : "a58bf35c-7475-3d2d-8754-1190d43397c6",
-            "name" : "Route based on beat type",
-            "type" : "PROCESSOR"
-          },
-          "zIndex" : 0
-        }, {
-          "backPressureDataSizeThreshold" : "1 GB",
-          "backPressureObjectThreshold" : 10000,
           "bends" : [ ],
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
             "id" : "e58370ae-464f-396e-858f-8ad3df99b93b",
-            "name" : "Publish packetbeat to kafka",
+            "name" : "Publish filebeat to kafka",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "17ddf712-8404-3b5d-a6fc-cca29aec4683",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -127,7 +91,43 @@
           "selectedRelationships" : [ "filebeat" ],
           "source" : {
             "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
+            "id" : "a58bf35c-7475-3d2d-8754-1190d43397c6",
+            "name" : "Route based on beat type",
+            "type" : "PROCESSOR"
+          },
+          "zIndex" : 0
+        }, {
+          "backPressureDataSizeThreshold" : "1 GB",
+          "backPressureObjectThreshold" : 10000,
+          "bends" : [ {
+            "x" : 1276.44580078125,
+            "y" : 543.0385131835938
+          }, {
+            "x" : 1276.44580078125,
+            "y" : 593.0385131835938
+          } ],
+          "componentType" : "CONNECTION",
+          "destination" : {
+            "comments" : "",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
+            "id" : "a58bf35c-7475-3d2d-8754-1190d43397c6",
+            "name" : "Route based on beat type",
+            "type" : "PROCESSOR"
+          },
+          "flowFileExpiration" : "0 sec",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
+          "identifier" : "3d863903-d05c-3abc-aee5-daa0854f96c1",
+          "labelIndex" : 1,
+          "loadBalanceCompression" : "DO_NOT_COMPRESS",
+          "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+          "name" : "",
+          "partitioningAttribute" : "",
+          "prioritizers" : [ ],
+          "selectedRelationships" : [ "unmatched" ],
+          "source" : {
+            "comments" : "",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
             "id" : "a58bf35c-7475-3d2d-8754-1190d43397c6",
             "name" : "Route based on beat type",
             "type" : "PROCESSOR"
@@ -145,7 +145,7 @@
             "type" : "INPUT_PORT"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "d1a09d06-2942-3ded-9b2f-329fdfd4d713",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -156,7 +156,7 @@
           "selectedRelationships" : [ "metricbeat" ],
           "source" : {
             "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
             "id" : "a58bf35c-7475-3d2d-8754-1190d43397c6",
             "name" : "Route based on beat type",
             "type" : "PROCESSOR"
@@ -169,13 +169,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
             "id" : "bd186347-86cf-397c-bbd8-10e963c7e322",
             "name" : "Extract beat type",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "703848f1-3cc3-3c8c-9417-1252c7f43e76",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -186,7 +186,7 @@
           "selectedRelationships" : [ "success" ],
           "source" : {
             "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
             "id" : "e5061d8d-a26a-37e0-bdfb-5f786c397cf2",
             "name" : "Beats Shipper",
             "type" : "PROCESSOR"
@@ -205,13 +205,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
             "id" : "bd186347-86cf-397c-bbd8-10e963c7e322",
             "name" : "Extract beat type",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "5210b170-7840-34f4-9fdc-35666aabbc8e",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -222,7 +222,7 @@
           "selectedRelationships" : [ "unmatched" ],
           "source" : {
             "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
             "id" : "bd186347-86cf-397c-bbd8-10e963c7e322",
             "name" : "Extract beat type",
             "type" : "PROCESSOR"
@@ -235,13 +235,13 @@
           "componentType" : "CONNECTION",
           "destination" : {
             "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
             "id" : "a58bf35c-7475-3d2d-8754-1190d43397c6",
             "name" : "Route based on beat type",
             "type" : "PROCESSOR"
           },
           "flowFileExpiration" : "0 sec",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "354b618e-11a1-3f66-9ed7-81ca75a837f0",
           "labelIndex" : 1,
           "loadBalanceCompression" : "DO_NOT_COMPRESS",
@@ -252,7 +252,7 @@
           "selectedRelationships" : [ "matched" ],
           "source" : {
             "comments" : "",
-            "groupId" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+            "groupId" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
             "id" : "bd186347-86cf-397c-bbd8-10e963c7e322",
             "name" : "Extract beat type",
             "type" : "PROCESSOR"
@@ -275,7 +275,7 @@
             },
             "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
           } ],
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "c096ede4-ef48-349d-bcc7-30e67f60e7f3",
           "name" : "AvroRecordSetWriter",
           "properties" : {
@@ -380,7 +380,7 @@
             },
             "type" : "org.apache.nifi.schemaregistry.services.SchemaRegistry"
           } ],
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "47e1efcd-4a73-3b86-a66a-6cd8a5e3b5f8",
           "name" : "ConfluentSchemaRegistry",
           "properties" : {
@@ -437,7 +437,7 @@
             },
             "type" : "org.apache.nifi.serialization.RecordReaderFactory"
           } ],
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "b34ad38c-58c6-37ce-be94-bf7abb55bbd2",
           "name" : "JsonTreeReader",
           "properties" : {
@@ -523,7 +523,7 @@
             },
             "type" : "org.apache.nifi.serialization.RecordSetWriterFactory"
           } ],
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "60fbd20c-b305-3f8e-9ed3-b0393b650e8f",
           "name" : "JsonRecordSetWriter",
           "properties" : {
@@ -648,48 +648,19 @@
         "flowFileConcurrency" : "UNBOUNDED",
         "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
         "funnels" : [ ],
-        "identifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+        "identifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
         "inputPorts" : [ ],
         "labels" : [ ],
         "name" : "NiFi Flow",
         "outputPorts" : [ ],
         "position" : {
-          "x" : 536.0,
-          "y" : 136.0
+          "x" : 1040.0,
+          "y" : 336.0
         },
         "processGroups" : [ {
           "comments" : "Transfrom metricbeat based on its metricsets and values. Then build schema for each metricset.",
           "componentType" : "PROCESS_GROUP",
           "connections" : [ {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "groupId" : "5367aa27-5a65-3597-b602-eb455527f6d4",
-              "id" : "fdc75809-aec8-33e3-9fde-6d451cef9fbe",
-              "name" : "kafka-output",
-              "type" : "OUTPUT_PORT"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "5367aa27-5a65-3597-b602-eb455527f6d4",
-            "identifier" : "ad974398-9c00-35fe-a9cd-d6e62d12b793",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "success" ],
-            "source" : {
-              "comments" : "",
-              "groupId" : "5367aa27-5a65-3597-b602-eb455527f6d4",
-              "id" : "0cd155af-4463-3b9b-8935-96d643cc6ef3",
-              "name" : "Flatten and Normalize",
-              "type" : "PROCESSOR"
-            },
-            "zIndex" : 0
-          }, {
             "backPressureDataSizeThreshold" : "1 GB",
             "backPressureObjectThreshold" : 10000,
             "bends" : [ ],
@@ -724,6 +695,35 @@
             "bends" : [ ],
             "componentType" : "CONNECTION",
             "destination" : {
+              "groupId" : "5367aa27-5a65-3597-b602-eb455527f6d4",
+              "id" : "fdc75809-aec8-33e3-9fde-6d451cef9fbe",
+              "name" : "kafka-output",
+              "type" : "OUTPUT_PORT"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "5367aa27-5a65-3597-b602-eb455527f6d4",
+            "identifier" : "ad974398-9c00-35fe-a9cd-d6e62d12b793",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "success" ],
+            "source" : {
+              "comments" : "",
+              "groupId" : "5367aa27-5a65-3597-b602-eb455527f6d4",
+              "id" : "0cd155af-4463-3b9b-8935-96d643cc6ef3",
+              "name" : "Flatten and Normalize",
+              "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
               "comments" : "",
               "groupId" : "5367aa27-5a65-3597-b602-eb455527f6d4",
               "id" : "e1c52062-c527-3e0b-a8d4-d15a9c34d9d3",
@@ -746,6 +746,35 @@
               "id" : "a75d431e-0587-38b1-ae2e-b1e6221946f4",
               "name" : "Extract metricset type",
               "type" : "PROCESSOR"
+            },
+            "zIndex" : 0
+          }, {
+            "backPressureDataSizeThreshold" : "1 GB",
+            "backPressureObjectThreshold" : 10000,
+            "bends" : [ ],
+            "componentType" : "CONNECTION",
+            "destination" : {
+              "comments" : "",
+              "groupId" : "5367aa27-5a65-3597-b602-eb455527f6d4",
+              "id" : "a75d431e-0587-38b1-ae2e-b1e6221946f4",
+              "name" : "Extract metricset type",
+              "type" : "PROCESSOR"
+            },
+            "flowFileExpiration" : "0 sec",
+            "groupIdentifier" : "5367aa27-5a65-3597-b602-eb455527f6d4",
+            "identifier" : "9b34142a-e6d4-323b-bbad-d3486d167bfa",
+            "labelIndex" : 1,
+            "loadBalanceCompression" : "DO_NOT_COMPRESS",
+            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
+            "name" : "",
+            "partitioningAttribute" : "",
+            "prioritizers" : [ ],
+            "selectedRelationships" : [ "" ],
+            "source" : {
+              "groupId" : "5367aa27-5a65-3597-b602-eb455527f6d4",
+              "id" : "8a76023e-57dc-3f9d-bf0d-fe993574d37e",
+              "name" : "metricbeat-flows",
+              "type" : "INPUT_PORT"
             },
             "zIndex" : 0
           }, {
@@ -806,35 +835,6 @@
               "id" : "a4496467-2192-37a7-bdde-f6c0efec0df9",
               "name" : "Route based on metricset",
               "type" : "PROCESSOR"
-            },
-            "zIndex" : 0
-          }, {
-            "backPressureDataSizeThreshold" : "1 GB",
-            "backPressureObjectThreshold" : 10000,
-            "bends" : [ ],
-            "componentType" : "CONNECTION",
-            "destination" : {
-              "comments" : "",
-              "groupId" : "5367aa27-5a65-3597-b602-eb455527f6d4",
-              "id" : "a75d431e-0587-38b1-ae2e-b1e6221946f4",
-              "name" : "Extract metricset type",
-              "type" : "PROCESSOR"
-            },
-            "flowFileExpiration" : "0 sec",
-            "groupIdentifier" : "5367aa27-5a65-3597-b602-eb455527f6d4",
-            "identifier" : "9b34142a-e6d4-323b-bbad-d3486d167bfa",
-            "labelIndex" : 1,
-            "loadBalanceCompression" : "DO_NOT_COMPRESS",
-            "loadBalanceStrategy" : "DO_NOT_LOAD_BALANCE",
-            "name" : "",
-            "partitioningAttribute" : "",
-            "prioritizers" : [ ],
-            "selectedRelationships" : [ "" ],
-            "source" : {
-              "groupId" : "5367aa27-5a65-3597-b602-eb455527f6d4",
-              "id" : "8a76023e-57dc-3f9d-bf0d-fe993574d37e",
-              "name" : "metricbeat-flows",
-              "type" : "INPUT_PORT"
             },
             "zIndex" : 0
           }, {
@@ -932,7 +932,7 @@
           "flowFileConcurrency" : "UNBOUNDED",
           "flowFileOutboundPolicy" : "STREAM_WHEN_AVAILABLE",
           "funnels" : [ ],
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "5367aa27-5a65-3597-b602-eb455527f6d4",
           "inputPorts" : [ {
             "allowRemoteAccess" : false,
@@ -1394,7 +1394,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "e5061d8d-a26a-37e0-bdfb-5f786c397cf2",
           "name" : "Beats Shipper",
           "penaltyDuration" : "30 sec",
@@ -1500,7 +1500,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "a0ef3624-65cc-3a07-afa1-4b8b38740cfb",
           "name" : "Publish metricbeat to kafka",
           "penaltyDuration" : "30 sec",
@@ -1702,9 +1702,9 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "1b841659-eac1-376c-b852-ff13e82b61bc",
-          "name" : "Publish filebeat to kafka",
+          "name" : "Publish packetbeat to kafka",
           "penaltyDuration" : "30 sec",
           "position" : {
             "x" : 816.0,
@@ -1904,7 +1904,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "a58bf35c-7475-3d2d-8754-1190d43397c6",
           "name" : "Route based on beat type",
           "penaltyDuration" : "30 sec",
@@ -1963,13 +1963,13 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "e58370ae-464f-396e-858f-8ad3df99b93b",
-          "name" : "Publish packetbeat to kafka",
+          "name" : "Publish filebeat to kafka",
           "penaltyDuration" : "30 sec",
           "position" : {
-            "x" : 328.0,
-            "y" : 696.0
+            "x" : 296.0,
+            "y" : 712.0
           },
           "properties" : {
             "compression.type" : "none",
@@ -2165,7 +2165,7 @@
           "componentType" : "PROCESSOR",
           "concurrentlySchedulableTaskCount" : 1,
           "executionNode" : "ALL",
-          "groupIdentifier" : "2f43521d-f45c-3f1b-9067-6b7de4d1e26d",
+          "groupIdentifier" : "834a1c5c-0528-32a3-b821-1a8c10a705d6",
           "identifier" : "bd186347-86cf-397c-bbd8-10e963c7e322",
           "name" : "Extract beat type",
           "penaltyDuration" : "30 sec",
